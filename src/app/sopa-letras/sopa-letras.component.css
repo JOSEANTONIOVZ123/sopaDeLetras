@@ -1,0 +1,18 @@
+h1{
+  color: blue;
+  text-align: center;
+  font-family: sans-serif;
+  box-shadow: 100px;
+  position: relative;
+  opacity: 0.8;
+}
+
+
+#principal{
+  text-align: center;
+  box-sizing: 50%;
+  margin-left: 23%;
+  width: 700px;
+  height: 500px;
+  background-color: green;
+}

@@ -3,10 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { SopaLetrasComponent } from './sopa-letras/sopa-letras.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SopaLetrasComponent
   ],
   imports: [
     BrowserModule,
