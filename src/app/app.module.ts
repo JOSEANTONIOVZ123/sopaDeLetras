@@ -8,12 +8,12 @@ import { SopaLetrasComponent } from './sopa-letras/sopa-letras.component';
 @NgModule({
   declarations: [
     AppComponent,
-    SopaLetrasComponent
+    SopaLetrasComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
-  ],
+    AppRoutingModule,
+],
   providers: [],
   bootstrap: [AppComponent]
 })

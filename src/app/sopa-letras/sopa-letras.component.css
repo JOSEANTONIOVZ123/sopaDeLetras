@@ -1,18 +1,36 @@
-h1{
-  color: blue;
+div {
   text-align: center;
-  font-family: sans-serif;
-  box-shadow: 100px;
-  position: relative;
-  opacity: 0.8;
 }
 
+button {
+  width: 100%;
+  color: black;
+}
 
-#principal{
+td:hover {
+  background-color: grey;
+}
+
+.matrix-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td {
+  width: 30px;
+  height: 30px;
   text-align: center;
-  box-sizing: 50%;
-  margin-left: 23%;
-  width: 700px;
-  height: 500px;
+  vertical-align: middle;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.highlight {
   background-color: green;
 }

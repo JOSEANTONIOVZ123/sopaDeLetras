@@ -1,22 +1,16 @@
-<h1>Bienvenido a la sopita de letras en angular</h1>
-
-
-<div id="principal">
-<h3>sopita</h3>
-<table>
-<tbody>
-  <tr *ngFor="let row of soup">
-    <td *ngFor="let letter of row ">{{letter}}</td>
-  </tr>
-</tbody>
-
-
-
-</table>
-
-
+<h1 style="text-align: center;">Sopa de letras</h1>
 
 <div>
-  <p>Palabras dentro de la sopa</p>
-</div>
+  <div class="matrix-container">
+    <table>
+      <tr *ngFor="let row of soup; let rowIndex = index">
+        <td *ngFor="let letter of row; let colIndex = index"
+            [id]="'cell-' + rowIndex + '-' + colIndex"
+            (click)="onLetterClick(rowIndex, colIndex)"
+            style="width: 30px; height: 30px; text-align: center; border: 1px solid black;">
+          {{ letter }}
+        </td>
+      </tr>
+    </table>
+  </div>
 </div>
