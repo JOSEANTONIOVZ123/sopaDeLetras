@@ -1,14 +1,13 @@
-div {
-  text-align: center;
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-button {
-  width: 100%;
-  color: black;
-}
-
-td:hover {
-  background-color: grey;
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .matrix-container {
@@ -33,4 +32,28 @@ td {
 
 .highlight {
   background-color: green;
+}
+
+.blocked {
+  pointer-events: none;
+}
+
+div {
+  text-align: center;
+}
+
+button {
+  width: 100%;
+  color: black;
+}
+
+td:hover {
+  background-color: grey;
+}
+
+.alert {
+  text-align: center;
+  font-size: 24px;
+  color: red;
+  margin-top: 20px;
 }

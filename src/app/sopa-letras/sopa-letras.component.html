@@ -1,6 +1,6 @@
-<h1 style="text-align: center;">Sopa de letras</h1>
 
 <div>
+  <h1 style="text-align:right;margin-right: 100px;">Sopa de letras        </h1>
   <div class="matrix-container">
     <table>
       <tr *ngFor="let row of soup; let rowIndex = index">
@@ -12,5 +12,21 @@
         </td>
       </tr>
     </table>
+
+
+    <div class="found-words">
+      <div *ngIf="allWordsFound" class="alert">
+        <h2>¡Has ganado!</h2>
+      </div>
+      <h2>Palabras encontradas:</h2>
+      <ul>
+        <li *ngFor="let word of words" [ngStyle]="{'background-color': foundWords.has(word) ? 'green' : null}">{{ word }}</li>
+      </ul>
+    </div>
   </div>
+
+
+
+
+
 </div>
